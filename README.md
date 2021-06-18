@@ -14,6 +14,8 @@ When this repository is used as a template, you will need to do the following:
    Secrets should be added at https://github.com/jeswr/[repository-name]/settings/secrets/actions
  - Fill in missing entries in the package.json
 
+Hello
+
 ## License
 ©2021–present
 [Jesse Wright](https://github.com/jeswr),
