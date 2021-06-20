@@ -13,7 +13,7 @@ When this repository is used as a template, you will need to do the following:
    Github tokens (`GH_TOKEN`) should be generated at https://github.com/settings/tokens/new?scopes=repo
    Secrets should be added at https://github.com/jeswr/[repository-name]/settings/secrets/actions
  - Fill in missing entries in the package.json
-
+g
 ## License
 ©2021–present
 [Jesse Wright](https://github.com/jeswr),
