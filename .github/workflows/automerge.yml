@@ -2,20 +2,15 @@
 name: automerge
 on:
   pull_request:
-  check_run:
-    type: [completed]
-  status: {}
+    types:
+      - labeled
 jobs:
   automerge:
     runs-on: ubuntu-latest
     steps:
-    - name: Check
-      uses: arup-group/action-all-checks-passed@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-    - name: automerge
-      uses: "pascalgn/automerge-action@v0.13.0"
-      env:
-        MERGE_LABELS: "dependencies"
-        GITHUB_TOKEN: "${{ secrets.GH_TOKEN }}"
+      - name: automerge
+        uses: "pascalgn/automerge-action@v0.13.0"
+        env:
+          MERGE_LABELS: ["dependencies", "automerge"]
+          GITHUB_TOKEN: "${{ secrets.GH_TOKEN }}"
  
