@@ -1,11 +1,9 @@
+
 name: automerge
 on:
   pull_request:
-    types:
-      - labeled
-  check_suite:
-    types:
-      - completed
+  check_run:
+    type: [completed]
   status: {}
 jobs:
   automerge:
