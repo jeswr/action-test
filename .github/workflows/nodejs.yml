@@ -24,7 +24,7 @@ jobs:
           npm run-script lint
 
   build:
-    needs: Lint
+    needs: eslint
     runs-on: ubuntu-latest
 
     strategy:
