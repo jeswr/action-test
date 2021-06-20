@@ -12,6 +12,6 @@ jobs:
       - name: automerge
         uses: "pascalgn/automerge-action@v0.13.0"
         env:
-          MERGE_LABELS: "automerge,dependencies"
+          MERGE_LABELS: "dependencies"
           GITHUB_TOKEN: "${{ secrets.GH_TOKEN }}"
  
