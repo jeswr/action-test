@@ -2,8 +2,7 @@
 name: automerge
 on:
   check_run:
-    types:
-      - completed
+    types: [completed]
   status: {}
 jobs:
   automerge:
